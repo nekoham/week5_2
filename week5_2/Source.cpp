@@ -6,8 +6,8 @@ int factorial2(int num) {
 	if (num == 0) {
 		return (1);
 	}
-	if (num < 0) {
-		return (num);
+	if (num < 0 || num > 12) {
+		return (0);
 	}
 	else {
 		return (num * factorial2(num - 1));
